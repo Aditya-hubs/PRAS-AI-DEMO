@@ -1,0 +1,46 @@
+@import url("https://rsms.me/inter/inter.css");
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: transparent;
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  scrollbar-width: none; 
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+html {
+  font-family: "Inter", sans-serif;
+  background: black;
+  color: #060e12;
+  padding: 1rem;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var experimental", sans-serif;
+  }
+}
+
+:root {
+  --font-size: 4rem;
+  --line-height: 1.2;
+  --num-words: 6;
+  --animation-duration: 10s;
+  --blue:#f5f6f8;
+}
+  

@@ -1,0 +1,49 @@
+.rotating-text {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  text-align: left;
+  float: left;
+  /* margin-top: 500px; */
+  color: #FFE7C7;
+}
+
+.window {
+  display: inline-block;
+  overflow: hidden;
+  height: calc(var(--font-size) * var(--line-height));
+  vertical-align: bottom;
+}
+
+.window-inner {
+  animation: scroll-text var(--animation-duration) ease-in-out infinite;
+  /* color: var(--blue); */
+  color: #ACDDDE;
+  
+}
+
+.window-inner span {
+  display: block;
+}
+
+@keyframes scroll-text {
+  0% { transform: translateY(0%); }
+  16.66% { transform: translateY(-16.66%); }
+  33.33% { transform: translateY(-33.33%); }
+  50% { transform: translateY(-50%); }
+  66.66% { transform: translateY(-66.66%); }
+  83.33%,
+  100% { transform: translateY(-83.33%); }
+}
+
+.container {
+  max-width: 50rem;
+  margin: auto;
+  text-align: left;
+  float: left;
+  display: flex;
+  justify-content: start;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

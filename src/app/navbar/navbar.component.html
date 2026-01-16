@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+    <a class="navbar-brand navbar-logo tex" href="#">PRAS AI</a>
+  
+    <button class="navbar-toggler" (click)="toggleMenu()">
+      <i class="fas fa-bars text-white"></i>
+    </button>
+  
+    <div class="collapse navbar-collapse show" id="navbarSupportedContent" #menu>
+      <ul class="navbar-nav ms-auto ">
+        <div class="hori-selector" #selector>
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+  
+        <li class="nav-item active" (click)="setActive($event)">
+          <a class="nav-link" href="/">
+            <i class="fas fa-tachometer-alt"></i>Dashboard
+          </a>
+        </li>
+  
+        <li class="nav-item" (click)="setActive($event)">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="far fa-address-book"></i>Product recommendation
+          </a>
+        </li>
+  
+        <li class="nav-item" (click)="setActive($event)">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="far fa-clone"></i>Price prediction
+          </a>
+        </li>
+  
+    
+  
+        <li class="nav-item" (click)="setActive($event)">
+          <a class="nav-link" href="javascript:void(0)">
+            <i class="far fa-chart-bar"></i>Contact us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  

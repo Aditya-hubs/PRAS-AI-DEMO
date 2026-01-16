@@ -1,0 +1,19 @@
+
+
+
+ <section class="flashcard">
+  <img [src]="link" alt="{{ title }}">
+
+  <div class="card">
+    <h1>{{ title }}</h1>
+    <p></p>
+    <p>{{ about }}</p>
+  </div>
+
+  <button
+    class="buy-btn"
+    [routerLink]="linker"
+    (click)="onClick()">
+    Explore
+  </button>
+</section>

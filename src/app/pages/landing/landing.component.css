@@ -1,0 +1,161 @@
+/* Wallpaper fixed behind everything */
+#vanta-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;          
+    overflow: hidden;
+  }
+  
+  /* Main page content */
+  .page-content {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;       /* full screen height */
+    display: flex;
+    flex-direction: column;  /* stack rows vertically if needed */
+    align-items: center;     
+    justify-content: flex-start;
+    padding: 2rem;
+  }
+  
+  /* Flex container holding heading + flashcards container */
+  .flexbox {
+    display: flex;
+    flex-direction: row;      /* row layout */
+    align-items: center;      /* vertically center children */
+    justify-content: center;  /* horizontally center row */
+    gap: 2vw;                 /* spacing between flexbox1 and any other children if present */
+    width: 100%;
+    padding: 40px 0;
+  }
+  
+  /* Container holding heading + 2 flashcards */
+  .flexbox1 {
+    display: flex;
+    flex-direction: row;      /* row layout for all children */
+    align-items: center;      /* vertical centering of heading + flashcards */
+    justify-content: start;  /* center the 3 items horizontally */
+    gap: 2vw;                 /* spacing between heading and cards */
+    width: 100%;              /* full width */
+    background-color: transparent;
+    margin-top: 225px;
+  }
+  
+  .flexbox1 > * {
+    flex-shrink: 0;           /* prevent shrinking of heading and flashcards */
+  }
+  
+  /* Optional: make flashcards take same width */
+  app-flashcard {
+    flex: 0 0 25vw;           /* each card ~25% of viewport width */
+  }
+  
+  /* Optional: heading width */
+  app-heading {
+    flex: 0 0 20vw;           /* heading takes ~20% of viewport width */
+    display: flex;
+    align-items: center;      /* vertical centering */
+    margin-left: 0%;
+    margin-right: 250px;
+  }
+  
+  /* Body / scroll */
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;       
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;                
+  }
+  
+
+  
+
+
+
+  body {
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+  overflow-x: hidden;
+}
+#breaking {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+  background: red;
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+}
+#breaking,
+#newsTicker {
+  border: 2px solid #000;
+}
+#newsTicker {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 8px 2px #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 998;
+}
+.date {
+  margin-right: 10px;
+  text-decoration: underline;
+}
+.story {
+  margin-right: 20px;
+}
+#newsTicker p {
+  margin: 0;
+  display: inline-block;
+  font-size: 25px;
+  padding-left: 100%;
+  animation: tickerTape 30s linear infinite;
+}
+@keyframes tickerTape {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.content {
+  position: absolute;
+  min-width: 100vw;
+  height: calc(100vh - 45px);
+  margin-top: 45px;
+  background: url("https://picsum.photos/g/1920/1080/?random");
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background: #fff;
+  border-radius: 8px;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 8px 2px #000000;
+}
+.disc{
+margin-top: 2%;
+}

@@ -1,0 +1,42 @@
+<!-- 
+<app-wallpaper></app-wallpaper>  
+<app-navbar></app-navbar> -->
+<div class="disc">
+<div id="breaking" class="disc">Breaking News:</div>
+<div id="newsTicker">
+  <p>
+    <span
+      class="story"
+      *ngFor="let pun of puns"
+    >
+      {{ pun }}
+    </span>
+  </p>
+</div>
+</div>
+
+
+<div class="page-content">
+  <div class="flexbox">
+    <!-- <app-heading></app-heading> -->
+
+    <div class="flexbox1">
+      <app-heading></app-heading>
+
+      <app-flashcard
+        title="Find Your Taste"
+        about="Product Reccomendation based on what you like."
+        link="https://cdn.pixabay.com/photo/2012/04/02/13/55/shopping-cart-24556_1280.png"
+        linker="/recommendation">
+      </app-flashcard>
+
+      <app-flashcard
+        title="Find the worth"
+        about="Price Prediction based on what is available across."
+        link="https://cdn.pixabay.com/photo/2014/04/03/00/39/money-bag-308983_1280.png">
+      </app-flashcard>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>
