@@ -161,13 +161,14 @@ export class FilterComponent {
 // import { Component } from '@angular/core';
 // import { ActivatedRoute } from '@angular/router';
 // import { HttpClient } from '@angular/common/http';
+// import { HttpClientModule } from '@angular/common/http';
 // import { Flashcard2Component } from '../../flashcard2/flashcard2.component';
 // import { CommonModule } from '@angular/common';
 
 // @Component({
 //   selector: 'app-filter',
 //   standalone: true,
-//   imports: [Flashcard2Component, CommonModule],
+//   imports: [Flashcard2Component, CommonModule,HttpClientModule],
 //   templateUrl: './filter.component.html',
 //   styleUrls: ['./filter.component.css']
 // })

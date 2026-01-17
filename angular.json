@@ -16,6 +16,7 @@
             "outputPath": "dist/product",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "prerender": false,
             "polyfills": [
               "zone.js"
             ],
@@ -29,14 +30,12 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-            ],
-            
+            ]
 
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+
+
+
+            
           },
           "configurations": {
             "production": {
